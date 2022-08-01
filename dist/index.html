@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="container-fluid shadow-sm p-3 mb-5">
-        <div class="container">
+        <div class="container-md">
             <div class="row justify-content-between">
                 <div class="col-4">
                     <img src="img/expandLogo.svg" alt="Expandshare Logo" />
@@ -24,6 +24,41 @@
             </div>
         </div>
     </header>
+
+    <section id="content">
+        <div id="checklist-title">
+
+        </div>
+
+        <template id="section-template">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Section Title">
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Section Type">
+                    <option value="1">Yes/No</option>
+                    <option value="2" selected>Checkbox</option>
+                    <option value="3">Short Text</option>
+                    <option value="4">Long Text</option>
+                    <option value="5">Temperature</option>
+                </select>    
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"></textarea>
+            </div>
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="requiredCheck">Required</label>
+                <input class="form-check-input" type="checkbox" role="switch" id="requiredCheck" checked>
+            </div>
+        </template>
+
+        <template id="item-template">
+
+        </template>
+
+        <button class="btn btn-success btn-circle btn-circle-sm m-1"><i class="fa fa-check">P</i></button>        
+    </section>
+
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/app.js"></script>
